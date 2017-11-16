@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux'
 import Page from '../components/page';
 
 export class Index extends React.Component {
