@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux'
 import Page from '../components/page';
 
 export class Voov extends React.Component {
@@ -6,14 +7,16 @@ export class Voov extends React.Component {
     return (
       <div>
         <div className="hero">
-
+          Count: {this.props.count.count}
         </div>
         <style jsx>{`
-  
+          .hero{
+            margin-left: 50px;
+          }
         `}</style>
       </div>
     )
   }
 }
 
-export default Page(Voov);
+export default Page(connect(state=>state)(Voov));
