@@ -1,7 +1,7 @@
 import React from 'react';
 import Page from '../components/page';
 
-export class Index extends React.Component {
+export class Voov extends React.Component {
   render() {
     return (
       <div>
@@ -16,4 +16,4 @@ export class Index extends React.Component {
   }
 }
 
-export default Page(Index);
+export default Page(Voov);
